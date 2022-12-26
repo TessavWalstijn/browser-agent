@@ -11,7 +11,7 @@ function detectFirefox(userAgent) {
   if (Firefox) {
     return {
       browser: 'Firefox',
-      version: Firefox[2] | 'unknown',
+      version: Firefox[2] || 'unknown',
     }
   }
 

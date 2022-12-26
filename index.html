@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Browser Type and Version</title>
+    <style>
+      body {
+        color: black;
+        background-color: white;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 300;
+        margin: 0;
+        padding: 3rem;
+      }
+
+      h1 {
+        color: darkgrey;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 4rem;
+      }
+
+      p {
+        color: darkgrey;
+        text-align: center;
+        font-family: 'Fira Mono', monospace;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Detect browser version with JavaScript.</h1>
+    <h2 id="result">detecting…</h2>
+    <p id="userAgent"></p>
+
+    <script src="./source/browsers/Firefox.js" defer></script>
+    <script src="./source/browsers/Chrome.js" defer></script>
+    <script src="./source/browsers/Edge.js" defer></script>
+    <script src="./source/browsers/Safari.js" defer></script>
+    <script src="./source/browsers/IE.js" defer></script>
+    <script src="./source/main.js" defer></script>
+  </body>
+</html>

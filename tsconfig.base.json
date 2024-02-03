@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM"],
+    "types": ["node"],
+    "skipLibCheck": true,
+    "allowJs": false,
+
+    /* Bundler mode */
+    "allowImportingTsExtensions": false,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": false,
+    "noEmit": false,
+    "rootDir": "source",
+    "outDir": "dist",
+    "sourceMap": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+  },
+  "exclude": ["node_modules", "source/dev.ts"],
+  "include": ["./source"],
+}

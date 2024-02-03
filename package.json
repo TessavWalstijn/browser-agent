@@ -1,0 +1,41 @@
+{
+  "name": "browser-id",
+  "version": "2.0.0",
+  "description": "Get users browser & os information (Uses userAgent)",
+  "type": "module",
+  "repository": "git@github.com:TessavWalstijn/browser-id.git",
+  "author": "TessavWalstijn <email@tessavwalstijn.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.1.0",
+  "exports": {
+    "require": "./cjs/index.js",
+    "import": "./esm/index.js"
+  },
+  "main": "./cjs/index.js",
+  "scripts": {
+    "dev": "ts-node --project tsconfig.dev.json ./source/dev",
+    "build": "tsup source/index.ts --format esm,cjs --dts",
+    "build:test": "vitest --config vitest.build.config.ts",
+    "build:tsc": "yarn build:esm &&  yarn build:cjs",
+    "build:esm": "npx tsc --build tsconfig.esm.json",
+    "build:cjs": "npx tsc --build tsconfig.cjs.json",
+    "test": "vitest"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@types/node": "^20.11.15",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "commander": "^12.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.4",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  }
+}

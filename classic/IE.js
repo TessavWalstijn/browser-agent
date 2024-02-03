@@ -14,7 +14,7 @@ function detectIE(userAgent) {
   }
 
   if (MSIE && Trident) {
-    // Note: edge case of IE 10
+    // NOTE: edge case of IE 10
     if (MSIE[2] === '8.0' && Trident[2] === '6.0') {
       return {
         browser: 'IE',
@@ -22,7 +22,7 @@ function detectIE(userAgent) {
       }
     }
 
-    // Note: edge case of IE 8
+    // NOTE: edge case of IE 8
     if (MSIE[2] === '7.0' && Trident[2] === '4.0') {
       return {
         browser: 'IE',
@@ -30,7 +30,7 @@ function detectIE(userAgent) {
       }
     }
 
-    // Note: edge case of IE 6
+    // NOTE: edge case of IE 6
     if (MSIE[2] === '8.0' && Trident[2] === '4.0') {
       return {
         browser: 'IE',

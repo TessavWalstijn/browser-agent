@@ -21,25 +21,30 @@
 - Linux
 - Android
 - iOS
+- iPadOS
 - Unix
 
 ---
 
-## How to run
+# How to use
 
-By running the `index.html`
+```ts
+import { detectMac } from 'browser-id'
 
-You will know the: OS - BrowserType - BrowserVersion
+const shortcutToolTipLabel = (event: Keyboard) => {
+  const alt = `${detectMac(userAgent) ? '⌥' : 'alt'}`
+  const shift = `${detectMac(userAgent) ? '⇧' : 'shift'}`
+  return `${alt} + ${shift} + T`
+}
+```
 
-### Tree map
+```cjs
+const browserId = require('browser-id')
+const { detectMac } = browserId
 
-```bash
-os-browser-version
-├─── source
-│   ├─── browsers
-│   │   └─── browserName.js   # Logic for unique browser
-│   └─── main.js  -   -   -   # Logic to check for OS and browser
-├─── index.html   -   -   -   # Entry point
-├─── LICENSE  -   -   -   -   # MIT License
-└─── README.md    -   -   -   # This file
+const shortcutToolTipLabel = (event: Keyboard) => {
+  const alt = `${detectMac(userAgent) ? '⌥' : 'alt'}`
+  const shift = `${detectMac(userAgent) ? '⇧' : 'shift'}`
+  return `${alt} + ${shift} + T`
+}
 ```

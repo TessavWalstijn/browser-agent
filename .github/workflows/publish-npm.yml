@@ -16,7 +16,7 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org
       - name: Set correct yarn
-      - run: corepack enable
+        run: corepack enable
       - name: Build
         run: yarn build
       - name: Publish

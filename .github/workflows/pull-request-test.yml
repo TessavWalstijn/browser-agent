@@ -18,6 +18,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Set correct yarn
-      - run: corepack enable
+        run: corepack enable
       - name: Test
-      - run: yarn test
+        run: yarn test

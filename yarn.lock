@@ -917,9 +917,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browser-id@workspace:.":
+"browser-agent@workspace:.":
   version: 0.0.0-use.local
-  resolution: "browser-id@workspace:."
+  resolution: "browser-agent@workspace:."
   dependencies:
     "@types/eslint": "npm:^8"
     "@types/node": "npm:^20.11.15"

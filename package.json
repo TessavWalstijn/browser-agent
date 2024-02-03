@@ -1,5 +1,5 @@
 {
-  "name": "browser-id",
+  "name": "browser-agent",
   "version": "2.0.0",
   "description": "Get users browser & os information (Uses userAgent)",
   "type": "module",

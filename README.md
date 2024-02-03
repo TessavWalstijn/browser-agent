@@ -29,7 +29,7 @@
 # How to use
 
 ```ts
-import { detectMac } from 'browser-id'
+import { detectMac } from 'browser-agent'
 
 const shortcutToolTipLabel = (event: Keyboard) => {
   const alt = `${detectMac(userAgent) ? '⌥' : 'alt'}`
@@ -39,8 +39,8 @@ const shortcutToolTipLabel = (event: Keyboard) => {
 ```
 
 ```cjs
-const browserId = require('browser-id')
-const { detectMac } = browserId
+const browserAgent = require('browser-agent')
+const { detectMac } = browserAgent
 
 const shortcutToolTipLabel = (event: Keyboard) => {
   const alt = `${detectMac(userAgent) ? '⌥' : 'alt'}`

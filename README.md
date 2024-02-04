@@ -26,7 +26,7 @@
 
 ---
 
-# How to use
+## How to use
 
 ```ts
 import { detectMac } from 'browser-agent'
@@ -48,3 +48,9 @@ const shortcutToolTipLabel = (event: Keyboard) => {
   return `${alt} + ${shift} + T`
 }
 ```
+
+## How to contribute
+
+Before starting, please read our [Code of Conduct](./CODE_OF_CONDUCT./) and [Contributing Guidelines](./CONTRIBUTING_GUIDELINES.md) for detailed information and instructions on contributing to this repository.
+
+

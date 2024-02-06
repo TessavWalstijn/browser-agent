@@ -1,17 +1,18 @@
 {
   "name": "browser-agent",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Get users browser & os information (Uses userAgent)",
   "type": "module",
   "repository": "git@github.com:TessavWalstijn/browser-id.git",
   "author": "TessavWalstijn <email@tessavwalstijn.com>",
   "license": "MIT",
   "packageManager": "yarn@4.1.0",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./cjs/index.js",
-    "import": "./esm/index.js"
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
   },
-  "main": "./cjs/index.js",
+  "main": "./dist/index.cjs",
   "scripts": {
     "dev": "ts-node --project tsconfig.dev.json ./source/dev",
     "build": "tsup source/index.ts --format esm,cjs --dts",

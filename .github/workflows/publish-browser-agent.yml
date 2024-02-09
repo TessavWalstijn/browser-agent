@@ -1,4 +1,4 @@
-name: 'Publish browser-agent/collection to npm'
+name: 'Publish browser-agent to npm'
 
 on:
   push:

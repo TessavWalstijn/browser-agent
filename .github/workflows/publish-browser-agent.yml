@@ -28,26 +28,3 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-  publish:
-    - name: Publish browser-agent/collection
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use Node.js 
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org
-      - name: Set correct yarn
-        run: corepack enable
-      - name: Install
-        run: yarn
-      - name: Generate
-        run: yarn collection:update
-      - name: Build
-        run: yarn collection:build
-      - name: Publish
-        run: yarn collection:publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}

@@ -1,19 +1,11 @@
-import { eBrowserType, iBrowser } from '../types/browser.types.js'
-import { userAgentsChrome } from './Chrome/index.js'
-import { userAgentsEdge } from './Edge/index.js'
-import { userAgentsFirefox } from './Firefox/index.js'
-import { userAgentsIE } from './IE/index.js'
-import { userAgentsSafari } from './Safari/index.js'
+import { eBrowserType } from '../types/browser.types.js'
+import { iCollectionUserAgents, iUserAgent } from '../types/userAgent.types.js'
+import { userAgentsChrome } from './Chrome/chrome.userAgents.js'
+import { userAgentsEdge } from './Edge/edge.userAgents.js'
+import { userAgentsFirefox } from './Firefox/firefox.userAgents.js'
+import { userAgentsIE } from './IE/ie.userAgents.js'
+import { userAgentsSafari } from './Safari/safari.userAgents.js'
 import { getBrowser } from './_GetBrowser/getBrowser.js'
-
-export interface iUserAgent {
-  values: string[]
-  browser: iBrowser
-}
-
-export interface iCollectionUserAgents {
-  [key: string]: iUserAgent[]
-}
 
 export const collectionUserAgents: iCollectionUserAgents = {
   userAgentsChrome,

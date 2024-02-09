@@ -16,7 +16,7 @@
   "scripts": {
     "collection:update": "ts-node --project tsconfig.dev.json ./build/collection",
     "collection:build": "cd ./collection && tsup ../source/browsers/userAgents.ts --format esm,cjs,iife --dts",
-    "collection:publish": "cd ./collection && npm publish --access public"
+    "collection:publish": "cd ./collection && npm publish --access public",
     "dev": "ts-node --project tsconfig.dev.json ./source/dev",
     "build": "tsup source/index.ts --format esm,cjs,iife --dts",
     "build:test": "vitest --config vitest.build.config.ts",

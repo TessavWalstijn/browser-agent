@@ -150,6 +150,10 @@ out
 *.sln
 *.sw?
 
+# 
+collection
+*.test.ts
+*.userAgents.ts
 tsconfig.*.json
 vitest.*.ts
 .eslint

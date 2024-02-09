@@ -5,15 +5,19 @@ import {
   detectFirefox,
   detectIE,
   detectSafari,
+  eBrowserType,
+  // @ts-ignore
+} from './dist/index.cjs'
+import { collectionUserAgents } from '../source/browsers/userAgents.js'
+import { testBrowser } from '../source/utils/testCreator'
+
+const {
   userAgentsChrome,
   userAgentsEdge,
   userAgentsFirefox,
   userAgentsIE,
   userAgentsSafari,
-  eBrowserType,
-  // @ts-ignore
-} from './dist/index.cjs'
-import { testBrowser } from '../source/utils/testCreator'
+} = collectionUserAgents
 
 describe('Chrome tests', () => {
   testBrowser({

@@ -1,10 +1,7 @@
 import { expect, test, describe } from 'vitest'
-import {
-  collectionUserAgents,
-  iBrowser,
-  iUserAgent,
-  tBrowserType,
-} from '../browsers/index.js'
+import { iBrowser, tBrowserType } from '../browsers/index.js'
+import { collectionUserAgents } from '../browsers/userAgents.js'
+import { iUserAgent } from '../types/userAgent.types.js'
 
 interface iProps {
   browserName: tBrowserType

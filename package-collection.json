@@ -1,0 +1,17 @@
+{
+  "name": "browser-agent/collection",
+  "description": "Use userAgent collection of browser-agent",
+  "type": "module",
+  "repository": "git@github.com:TessavWalstijn/browser-id.git",
+  "author": "TessavWalstijn <email@tessavwalstijn.com>",
+  "license": "MIT",
+  "types": "./dist/userAgents.d.ts",
+  "exports": {
+    "require": "./dist/userAgents.cjs",
+    "import": "./dist/userAgents.js"
+  },
+  "main": "./dist/userAgents.cjs",
+  "engines": {
+    "node": ">= 16"
+  }
+}

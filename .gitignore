@@ -149,3 +149,6 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore collection generated code
+collection

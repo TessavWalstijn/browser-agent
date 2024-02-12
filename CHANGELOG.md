@@ -1,10 +1,18 @@
 # Browser Agent Changelog
 
-## Release [v3.0.0](https://github.com/TessavWalstijn/browser-agent/releases/tag/v2.0.2) - 2024-02-09
+## Release [v3.0.1](https://github.com/TessavWalstijn/browser-agent/releases/tag/v3.0.1) - 2024-02-12
+
+### Fixed
+
+- `browser-agent-collection` build script
+- collection folder in repository
+
+
+## Release [v3.0.0](https://github.com/TessavWalstijn/browser-agent/releases/tag/v3.0.0) - 2024-02-09
 
 ### Added
 
-- npm package `browser-agent/collection`
+- npm package `browser-agent-collection`
   the place for the userAgent collection
 - Changelog
 
@@ -81,7 +89,7 @@
 
 ### Fixed
 
-- Typo in Firefox.js 
+- Typo in Firefox.js
 
 ## Release [v1.0.0](https://github.com/TessavWalstijn/browser-agent/releases/tag/v1.0.0) - 2022-12-26
 

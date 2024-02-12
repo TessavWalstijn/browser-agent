@@ -1,4 +1,4 @@
-name: 'Pull Request browser-id test'
+name: 'Pull Request browser-agent test'
 
 on:
   pull_request:

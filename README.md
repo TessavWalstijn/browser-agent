@@ -52,10 +52,11 @@ const shortcutToolTipLabel = (event) => {
 ## Browser Agent packages notice
 
 The npm packages:
-- `browser-agent`
-- `browser-agent/collection`
 
-Have the same version to garuntee compatibility with each other.
+- `browser-agent`
+- `browser-agent-collection`
+
+Have the same version to grantee compatibility with each other.
 
 ## How to contribute
 

@@ -1,6 +1,6 @@
 {
   "name": "browser-agent",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Get users browser & os information (Uses userAgent)",
   "type": "module",
   "repository": "git@github.com:TessavWalstijn/browser-agent.git",
@@ -14,7 +14,7 @@
   },
   "main": "./dist/index.cjs",
   "scripts": {
-    "collection:update": "ts-node --project tsconfig.dev.json ./build/collection",
+    "collection:update": "node ./build/collection",
     "collection:build": "cd ./collection && tsup ../source/browsers/userAgents.ts --format esm,cjs,iife --dts",
     "collection:publish": "cd ./collection && npm publish --access public",
     "dev": "ts-node --project tsconfig.dev.json ./source/dev",

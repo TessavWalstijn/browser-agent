@@ -1,8 +1,8 @@
 {
-  "name": "browser-agent/collection",
+  "name": "browser-agent-collection",
   "description": "Use userAgent collection of browser-agent",
   "type": "module",
-  "repository": "git@github.com:TessavWalstijn/browser-id.git",
+  "repository": "git@github.com:TessavWalstijn/browser-agent.git",
   "author": "TessavWalstijn <email@tessavwalstijn.com>",
   "license": "MIT",
   "types": "./dist/userAgents.d.ts",
